@@ -39,8 +39,11 @@ Estimated time: 10 minutes
 
 6.  On the left-hand pane you will find links to quickly navigate to OPSI offerings including Capacity Planning, Exadata Insights, Oracle SQL Warehouse, AWR Hub, and Dashboards.  
 
+      ![Left Pane](./images/opsi-left-pane.png " ")
+
 7.  When viewing resources there will also be options to filter the displayed resources or adjust the time range at which the forecasting algorithms are computing against.
 
+      ![Filter](./images/opsi-filter.png " ")
 
 ## Acknowledgements
 
