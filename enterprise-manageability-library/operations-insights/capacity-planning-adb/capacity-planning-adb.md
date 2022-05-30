@@ -114,7 +114,7 @@ This lab assumes you have completed the following labs:
 
      The page displays a Tree map of all databases breaking it down by Database Type. This lets you compare how your different, individual databases are using their resources as well as between various database types.
 
-## Task 2: Capacity Planning - Storage
+## Task 3: Capacity Planning - Storage
 
 1.  Click on the **Storage** menu on the left panel.
 
