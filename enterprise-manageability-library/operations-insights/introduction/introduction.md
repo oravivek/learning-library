@@ -2,7 +2,7 @@
 
 ## About this Workshop
 
-In this workshop there are nine lab exercises. They have been organized to help you become familiar with Operations Insights and use of this service's key capabilities. With the new demo mode for Operations Insights, you can experience the service's value with minimal effort.
+In this workshop there are four lab exercises. They have been organized to help you become familiar with Operations Insights and use of this service's key capabilities. With the new demo mode for Operations Insights, you can experience the service's value with minimal effort.
 
 Estimated Workshop Time: 2 hours
 
