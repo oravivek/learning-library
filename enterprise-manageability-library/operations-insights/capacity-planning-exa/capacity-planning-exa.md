@@ -57,24 +57,59 @@ This lab assumes you have completed the following labs:
 
 4.  On this page, the aggregate view of all the discovered Exadata systems will be shown.
 
-5.  Also, the current and forecast utilization of the Exadata system will be shown on the bottom section.
+      ![Left Pane](./images/aggregate-view.png " ")
 
-Now click on a Exadata system to evaluate more insights. Let’s choose a full stack for this lab.
+5.  Also, the current and forecast utilization of the Exadata system will be shown on the bottom section. Click on a Exadata system to evaluate more insights. Click on the Full Rack.
 
-This page will land on the Rack and Key Metrics. Highlight the software and hardware summary.
+      ![Left Pane](./images/current-forecast.png " ")
 
-Navigate to Metrics by Database on the left pane.
+6.  On the **Exadata System Details** page, you can view **Rack and Key Metrics**. The page displays Software and Hardware Summary.
 
-Select CPU tab and choose the Host under Grouping.
-Now choose ‘Max Allocation’ under size and Usage Change (%) under color
-Highlight the hosts with maximum CPU utilization and the databases which consume the highest CPU.
-Now show the trend & forecast of CPU for Host and Database. Click on the host name and highlight the trend graph.
-Similarly Select the database and highlight the trend and forecast graph.
-Likewise navigate to Storage, Memory and IOPS and evaluate the different trend and forecast graphs. Now select Metrics by Host on the left pane.
-On this page, click on the CPU tab, select All hosts to see the aggregate trend & forecast. Also choose the individual host to show the drilled down trend and forecast.
-Switch to Exadata Storage Server option on the left pane.
-Select Individual data series on the top right pane to show the individual storage utilization.
-Now select Aggregate data series and forecast option.
+      ![Left Pane](./images/rack-and-key-metrics.png " ")
+
+7.  Navigate to **Metrics by Database** on the left pane.
+
+      ![Left Pane](./images/metrics-by-database.png " ")
+
+8.  Select **CPU** tab and choose the **Host** under Grouping.
+
+      ![Left Pane](./images/metrics-by-database-host.png " ")
+
+9.  Now choose **Max Allocation (CPU)** under **Size** and **Usage Change (%)** under **Color**.
+
+      ![Left Pane](./images/max-allocation-usage-change.png " ")
+
+10.  Highlight the hosts with maximum CPU utilization and the databases which consume the highest CPU.
+
+      ![Left Pane](./images/max-cpu-max-database.png " ")
+
+11.  To show the trend & forecast of CPU for Host and Database, click on the host name and highlight the trend graph.
+
+      ![Left Pane](./images/trend-host-cpu.png " ")
+
+12.  Select the database and highlight the trend and forecast graph.
+
+      ![Left Pane](./images/trend-host-database.png " ")
+
+13.  Click **Metrics by Host** on the left pane.
+
+      ![Left Pane](./images/metrics-by-host.png " ")
+
+14.  On the **Metrics by Host** page, click on the **CPU** tab, select **All hosts** to see the aggregate trend & forecast. 
+
+      ![Left Pane](./images/cpu-all-hosts.png " ")
+
+15.  Click **Exadata Storage Server** option on the left pane.
+
+      ![Left Pane](./images/exadata-storage-server.png " ")
+
+16. Select **Individual data series** on the top right pane to show the individual storage utilization.
+
+      ![Left Pane](./images/exadata-storage-server1.png " ")
+
+17. Select **Aggregate data series and forecast** on the top right pane to show total individual storage utilization.
+
+      ![Left Pane](./images/exadata-storage-server2.png " ")
 
 In Conclusion, OPSI Exadata Insights provides comprehensive capacity analysis to give administrators the ability to view, analyze, proactively forecast, and detect potential constraints in Exadata resources. As a system administrator they want to be able to make critical decisions to optimize their Exadata stacks; plan for growth, compare resource usage and perform what-if analysis for various scenarios.
 
