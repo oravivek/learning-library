@@ -1,150 +1,120 @@
-# Capacity Planning of Oracle Autonomous Databases
+# Analyze SQL Performance at Fleet Level
 
 ## Introduction
 
-In this lab, you will go through the steps to explore Capacity Planning for Oracle Autonomous Database.
+In this lab, you will go through the steps to analyze SQL Performance at Fleet level and proactively identify SQLs Degrading performance.
 
 Estimated Time: 20 minutes
 
 ### Objectives
 
--   Explore Capacity Planning for Oracle Autonomous Database.
+-   Analyze SQL Performance at Fleet level and proactively identify SQLs Degrading performance.
 
 ### Prerequisites
 
 This lab assumes you have completed the following labs:
 * Lab: Enable Demo Mode
 
-## Task 1: Capacity Planning - Databases
+## Task 1: Analyze SQL Performance
 
-1.  On the **Operations Insights Overview** page, from the left pane click on **Capacity Planning**.
+1.  On the **Operations Insights Overview** page, from the left pane click on **Oracle SQL Warehouse**.
 
-      ![Left Pane](./images/capacity-planning.png " ")
+      ![Left Pane](./images/sql-warehouse.png " ")
 
-2.  On the **Database Capacity Planning** page, you will obtain a fleet wide overview of your resource consumption and trends.  CPU insights, storage insights, and memory insights give a quick view into top resource consumers now and forecasts potential resource bottlenecks over the selected time period.
+2.  On the **Oracle SQL Warehouse** page, you can Identify SQL performance trends across enterprise-wide databases.
 
-      ![Left Pane](./images/database-capacity-planning.png " ")
+      ![Left Pane](./images/sql-warehouse1.png " ")
 
-    From this page you can perform the following tasks in support of the Capacity Planning use case goals:
+    From this page you can perform the following tasks :
 
-    * View total allocation and utilization of CPU, Storage, Memory, and I/O resources for all (enabled) databases in the compartment
-    * Identify top-5 databases of CPU, Storage, and Memory by absolute usage or utilization percentage
-    * Identify top-5 databases by CPU, Storage, and Memory growth over the time period
-    * See aggregated historical usage trends for CPU, Storage, and Memory over the time period
+    * View the degrading SQL, variant SQL, inefficient SQL, and SQL with plan changes.
+    * View the SQL statements with the highest CPU and I/O usage.
+    * Analyze the performance of SQL based on these categories – degrading, inefficient, variant, and with plan changes.
 
-3.  From **Time Range** on the left pane select **Last 90 days** and ensure that the **Compartment** is set to **OperationsInsights**.
+3.  Click on the **Degradation**.
 
-      ![Left Pane](./images/time-range.png " ")
+      ![Left Pane](./images/sql-warehouse1-1.png " ")
 
-4.  Review the **Inventory** section. The **Inventory** section displays the total number of databases enabled for Operations Insights along with the database types. In addition, the CPU, Storage, Memory, and I/O usage charts display overall resource consumption (Top Consumers and UsageTrend) by these database targets.
+4.  This will bring up SQL Insights for degrading SQLs in last 7 days.
 
-      ![Left Pane](./images/inventory.png " ")
+      ![Left Pane](./images/sql-warehouse2.png " ")
 
-5.  **CPU Insights** - Database utilization percentage for the 90th percentile value of the daily average CPU Usage over the selected time period. This sections show the number of databases running with low (0–25%) and high (75–100%) utilization of CPU.
+    * The heat map shows the degrading SQLs across databases. This page analyzes the SQL insights using the **Master** and **Details** way. The heatmap is the **Master** and the below bar chart is the **Details** chart.
+    * The size of the box represents **Average response Time** and color represents change % of **Average Response Time**.
+      
+      You can customize the heat map based on the following:
+      * **Size**: Customizes the size of the heat map segments based on Average Active Sessions, Average Response Time, Executions/Hour, I/O Time, and CPU Time.
+      * **Color**: Customizes the color coding of the heat map based on percentage change value or absolute value of Average Active Sessions, Average Response Time, Executions/Hour, I/O Time, and CPU Time.
 
-      ![Left Pane](./images/cpu-insights.png " ")
+5.  Here SQL_ID **02bhunw0vgg2j** in database **INVCP** is degrading the most.
 
-6.  **Storage Insights** - Database utilization percentage for the 90th percentile value of the daily average Storage Usage over the selected time period.  This sections show the number of databases running with low (0–25%) and high (75–100%) utilization of storage.
+6.  The details bar chart shows the time series view of the sql_id **02bhunw0vgg2j** for last 7 days.
 
-      ![Left Pane](./images/storage-insights.png " ")
+      You can see how the Average SQL Response time of the SQL has been increasing consistently for database **INVCP**. You can customize the bar chart display based on the following:
 
-7.  **Memory Insights** - Database utilization percentage for the 90th percentile value of the daily average Memory Usage over the selected time period.  This sections show the number of databases running with low (0–25%) and high (75–100%) utilization of memory.
+      * Avg. Active Sessions
+      * Avg. Average Response Time
+      * Executions Per Hour
+      * I/O Time
+      * CPU Time
+      * Inefficient Wait Time
 
-      ![Left Pane](./images/memory-insights.png " ")
+7.  Click the sql_id beside **Selected SQL**.
 
-## Task 2: Capacity Planning - CPU
+      ![Left Pane](./images/sql-warehouse22.png " ")
 
-1.  On the **Database Capacity Planning** page, from the left pane click on **CPU**.
+8.  This page shows the SQL Details of our most degrading SQL **02bhunw0vgg2j** for database **INVCP**. You can review it's SQL Text and database location as well as its key performance metrics under: **Performance Statistics** and **Execution Plan Insights**.
 
-      ![Left Pane](./images/database-cpu.png " ")
+      ![Left Pane](./images/sql-warehouse3.png " ")
 
-2.  **Database CPU** page has a master-detail design with three primary components:
+      **Performance Statistics**: This chart helps you view the trend in the SQL Statement performance for the current time, based on
 
-    * Insights – table of databases flagged for CPU utilization insights
-    * Aggregate – treemap of CPU utilization over all databases in the compartment
-    * Trend & Forecast – time series charts of CPU usage trends and forecasts for individual or groups of databases
+      * The Average Response time in seconds.
+      * The number of SQL Statements that were executed per hour.
+      * The variability value of the SQL Statement, which indicates the extent of variance in the SQL Statement's performance in the current time period.
+      * The inefficiency percentage which is based on the idle wait time of the SQL Statement.
+      * The time range within which the maximum executions of the SQL Statement occurred.
 
-      ![Left Pane](./images/database-cpu1.png " ")
+      **Execution Plan Insights** provides:
 
-3.  On the **Database CPU** page, under **Insights** tab, select **30 Day High Utilization Forecast** against **Databases**, to view database CPU utilization forecast for next 30 days.
+      * Plans Used
+      * The best and worst performing plans
+      * Plans with the most CPU and I/O usage
+      * The most executed SQL Plan  
 
-      ![Left Pane](./images/utilization-forecast.png " ")
+      In the **Metrics** section **Performance Trend** chart, we can see that the average Response of the SQL started to increase.
+      
+      The **Activity** chart displays the session activity of the SQL Statement, for the current time. It also shows how the SQL Statement activity is categorized into different wait classes indicated by the color, as described in the legend on the chart.
 
-4.  Under **Database Display Name** column, select the row corresponding to **CRM-ST** database.
+9.  Click on **Execution Plans** from the left pane.
 
-      ![Left Pane](./images/crm-st-database.png " ")
+      ![Left Pane](./images/sql-warehouse4.png " ")
 
-5.  Check the **Utilization (%)** and **Usage Change (%)** for database **CRM-ST**.
-    
-    * Utilization (%) -  Utilization percentage for the 90th percentile value of the daily average storage usage over the selected time period
-    * Usage Change (%): Percentage change in the linear trend of storage usage over the selected time
+      The **Execution Plan** shows the plan lines by operation.
+      
+      You can analyze the Operation Cost, Estimated Rows and Estimated bytes of each operation; allowing you to locate problematic operations.  The higher the operation cost, the more problematic the operation can be.  The current operations cost of this plan hash is 22.9 million and this is the best performing plan.     
 
-6.  The **Trend and Forecast** chart displays historical time series plots related to CPU allocation and usage for the selected database **CRM-ST**.
+10.  Click on the plan hash value besides **Worst Performer**.
 
-      ![Left Pane](./images/trend-and-forecast.png " ")
+      ![Left Pane](./images/sql-warehouse5.png " ")
 
-7.  Historical CPU Usage (dark solid green line) is the Avg Usage - average value of daily (hourly) CPU usage data
+      You can see that the execution plan is different and much more expensive because Operations Cost of the SQL is now 329 million.
 
-8.  Avg Usage Forecast - forecast of Avg Usage data using linear forecast model (Dashed Green line) and the Max Allocation - maximum allocation of CPU for the database.
+11.  Click on **Comparison** from the left pane. This will show the comparison of performance trends of the two plans based on the **Average Response Time**.
 
-9.  The value **57.51** AVG ACTIVE CPU USAGE is forecasted for after 15 days for Avg usage of CPU.
+      ![Left Pane](./images/sql-warehouse6.png " ")
 
-10.  Select **Max Usage** from legend on right side. The red line is **Max Usage** - maximum value of daily (hourly) CPU usage data for database **CRM-ST**.
+12.  We can further compare and analyze the two plans by:
 
-      ![Left Pane](./images/max-usage-cpu.png " ")
+    * Average Active Sessions
+      ![Left Pane](./images/sql-warehouse7.png " ")
+    * Executions Per Hour
+      ![Left Pane](./images/sql-warehouse8.png " ")
+    * I/O Time
+      ![Left Pane](./images/sql-warehouse9.png " ")
+    * CPU Time
+      ![Left Pane](./images/sql-warehouse10.png " ")
 
-11.  Select **Max Usage Forecast** from legend on right side.
-
-      ![Left Pane](./images/max-usage-forecast.png " ")
-
-12.  The value **77.66** AVG ACTIVE CPU USAGE is forecasted for after 15 days for Max usage of CPU.
-
-    You can see the difference in average forecasted value v/s Max forecasted value. If the workload is critical and cannot tolerate any performance issues than database must be allocated the max forecasted value. If the workload is not so critical and can tolerate deviations in performance than it is ok to allocate CPU based on average forecasted value and save money.
-
-13.  The trending and forecast chart facilitates:
-
-     * Forecast future maximum and average demand for CPU resources
-     * Compare current usage to allocation to detect over-provisioning
-     * Compare maximum to average usage and trends to assess demand volatility
-     * Forecast difference between maximum and average daily CPU usage to estimate potential savings from workload smoothing
-
-14.  Click **Aggregate** on the top and from **Grouping** select **Database Type**.
-
-      ![Left Pane](./images/aggregate-database.png " ")
-
-     The page displays a Tree map of all databases breaking it down by Database Type. This lets you compare how your different, individual databases are using their resources as well as between various database types.
-
-## Task 3: Capacity Planning - Storage
-
-1.  Click on the **Storage** menu on the left panel.
-
-      ![Left Pane](./images/storage-menu.png " ")
-
-2.  You get complete view of storage usage across all Operations Insights enabled databases
-
-      ![Left Pane](./images/database-storage.png " ")
-
-    From here we can identify servers with underused or overused storage and also compare storage utilization between databases.
-
-3.  From the drop down on the top select **30 Days High Utilization Forecast**.
-
-      ![Left Pane](./images/storage-utilization-forecast.png " ")
-
-4.  In the **Trend & Forecast** chart View the storage trend and usage forecast for selected database.
-
-      ![Left Pane](./images/storage-trend-forecast.png " ")
-
-5.  In the **Trend & Forecast** chart View click on **Machine Learning** to project future resource consumption. Machine Learning is a more advanced model that takes seasonality into consideration.
-
-      ![Left Pane](./images/storage-trend-forecast-ml.png " ")
-
-6.  On the **Insights** tab select **30 Day High Utilization Forecast** for **Databases** and search the database **EAMERICA**.
-
-      ![Left Pane](./images/storage-eamerica.png " ")
-
-7.  In the **Trend & Forecast** chart view select **Tablespace Breakdown** to view details on a tablespace level.
-
-      ![Left Pane](./images/storage-eamerica-tablespace.png " ")
 
 ## Acknowledgements
 
