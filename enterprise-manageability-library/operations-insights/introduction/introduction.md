@@ -2,7 +2,7 @@
 
 ## About this Workshop
 
-In this workshop there are four lab exercises. They have been organized to help you become familiar with Operations Insights and use of this service's key capabilities. With the new demo mode for Operations Insights, you can experience the service's value with minimal effort.
+In this workshop there are five lab exercises. They have been organized to help you become familiar with Operations Insights and use of this service's key capabilities. With the new demo mode for Operations Insights, you can experience the service's value with minimal effort.
 
 Estimated Workshop Time: 2 hours
 
@@ -31,6 +31,13 @@ SQL Warehouse
 * Long-term SQL store for performance and trend analysis of Oracle Databases
 * Proactively identify and mitigate SQL issues
 * Find common patterns in SQL behavior across databases and applications
+
+AWR Hub
+
+* Track and analyze SQL plan changes for workloads within a single database
+* Track and analyze SQL plan changes for workloads across multiple databases
+* Understand past and present workload (SQL) performance over a period of two years or above.
+* Build custom dashboards to plot SQL performance statistics, database waits, CPU usage history, connections established, etc.
 
 ### Objectives
 

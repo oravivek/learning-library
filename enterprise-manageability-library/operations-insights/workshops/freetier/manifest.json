@@ -33,6 +33,11 @@
             "filename": "../../sql-performance/sql-performance.md"
         },
         {
+            "title": "Lab 5: AWR Hub",
+            "description": "AWR Hub",
+            "filename": "../../awr-hub/awr-hub.md"
+        },
+        {
             "title": "Need Help?",
             "description": "Solutions to Common Problems and Directions for Receiving Live Help",
             "filename": "https://raw.githubusercontent.com/oracle/learning-library/master/oci-library/need-help/need-help-livelabs.md"
