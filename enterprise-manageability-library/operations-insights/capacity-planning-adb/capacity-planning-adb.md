@@ -1,14 +1,14 @@
-# Capacity Planning of Oracle Autonomous Databases
+# Capacity Planning of Oracle Databases
 
 ## Introduction
 
-In this lab, you will go through the steps to explore Capacity Planning for Oracle Autonomous Database.
+In this lab, you will go through the steps to explore Capacity Planning for Oracle Databases.
 
 Estimated Time: 20 minutes
 
 ### Objectives
 
--   Explore Capacity Planning for Oracle Autonomous Database.
+-   Explore Capacity Planning for Oracle Databases.
 
 ### Prerequisites
 

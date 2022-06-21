@@ -15,7 +15,21 @@ Estimated Time: 20 minutes
 This lab assumes you have completed the following labs:
 * Lab: Enable Demo Mode
 
-## Task 1: Exadata Fleet
+## Task 1: Prerequisites
+
+1.  Before you begin, ensure the following:
+
+      * IMPORTANT: Enterprise Manager configuration (setting up the OCI Bridge) MUST be done first. See [Integrating Enterprise Manager with OCI Services](https://docs.oracle.com/en/enterprise-manager/cloud-control/enterprise-manager-cloud-control/13.5/emadm/using-oci-services-enterprise-manager.html#GUID-1F310CD9-23FD-4CF3-8E32-0943F7DB3762).
+
+      * EM Bridge and Object Storage bucket has been set up. See [Adding Enterprise Manager Targets](https://docs.oracle.com/en-us/iaas/operations-insights/doc/get-started-operations-insights.html#GUID-3B9CFE26-976E-4983-8D4F-2909DA327BD0).
+
+      * Enable Exadata Systems for Operations Insights.  Only Exadata Database Machines and Exadata Cloud at Customer deployments monitored by Enterprise Manager are currently supported.
+
+2.  Exadata Insights is compatible with the following versions of Enterprise Manager:
+      * On-premises (Exadata Database Machine): Enterprise Manager 13c Release 5 Update 1 (13.5.0.1) and greater
+      * Cloud Service (Exadata Customer at Cloud): Enterprise Manager 13c Release 5 Update 4 (13.5.0.4) and greater
+
+## Task 2: Exadata Fleet
 
 1.  On the **Operations Insights Overview** page, from the left pane select **Exadatas** compartment.
 
@@ -41,7 +55,7 @@ This lab assumes you have completed the following labs:
 
       ![Left Pane](./images/db-host-actions.png " ")
 
-## Task 2: Exadata Insights
+## Task 3: Exadata Insights
 
 1.  Click on **Operations Insights** to go to the Overview Page.
 
