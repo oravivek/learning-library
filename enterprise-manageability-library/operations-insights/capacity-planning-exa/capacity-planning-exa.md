@@ -4,7 +4,7 @@
 
 In this lab, you will go through the steps to explore Capacity Planning of Oracle Exadata.
 
-Estimated Time: 20 minutes
+Estimated Time: 15 minutes
 
 ### Objectives
 
