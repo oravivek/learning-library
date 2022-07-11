@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this lab, you will go through the process to navigate thru **AWR Hub**.
+In this lab, you will go through the process to navigate through **AWR Hub**.
 
 The Operations Insights AWR Hub lets you consolidate and store detailed performance data from the Automatic Workload Repository (AWR) of your important Oracle Databases. This consolidated AWR Hub allows you to view and analyze historical performance data beyond the AWR retention period of the source database.
 
