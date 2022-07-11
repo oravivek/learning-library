@@ -48,7 +48,7 @@ This lab assumes you have completed the following labs:
 
       ![Left Pane](./images/awr-hub2.png " ")
 
-4.  The **Generate Automatic Workload Repository Report** dialog appears. Selecting a different **Snapshot Start Time** changes the list of available snapshots for the **Start Snapshot** and **End Snapshots** drop-down menus. Select **Snapshot Start Time** and then **Start Snapshot** and **End Snapshots**. Click **Download**.
+4.  The **Generate Automatic Workload Repository Report** dialogue appears. Selecting a different **Snapshot Start Time** changes the list of available snapshots for the **Start Snapshot** and **End Snapshots** drop-down menus. Select **Snapshot Start Time** and then **Start Snapshot** and **End Snapshots**. Click **Download**.
 
       ![Left Pane](./images/awr-hub3.png " ")
 
