@@ -35,22 +35,22 @@ This lab assumes you have completed the following labs:
 
       ![Left Pane](./images/sql-warehouse1-1.png " ")
 
-4.  This will bring up SQL Insights for degrading SQLs in last 7 days.
+4.  This will bring up SQL Insights for degrading SQLs in the last 7 days.
 
       ![Left Pane](./images/sql-warehouse2.png " ")
 
     * The heat map shows the degrading SQLs across databases. This page analyzes the SQL insights using the **Master** and **Details** way. The heatmap is the **Master** and the below bar chart is the **Details** chart.
-    * The size of the box represents **Average response Time** and color represents change % of **Average Response Time**.
+    * The size of the box represents **Average response Time** and colour represents the change % of **Average Response Time**.
       
       You can customize the heat map based on the following:
       * **Size**: Customizes the size of the heat map segments based on Average Active Sessions, Average Response Time, Executions/Hour, I/O Time, and CPU Time.
-      * **Color**: Customizes the color coding of the heat map based on percentage change value or absolute value of Average Active Sessions, Average Response Time, Executions/Hour, I/O Time, and CPU Time.
+      * **Color**: Customizes the colour-coding of the heat map based on percentage change value or absolute value of Average Active Sessions, Average Response Time, Executions/Hour, I/O Time, and CPU Time.
 
 5.  Here SQL_ID **02bhunw0vgg2j** in database **INVCP** is degrading the most.
 
-6.  The details bar chart shows the time series view of the sql_id **02bhunw0vgg2j** for last 7 days.
+6.  The details bar chart shows the time series view of the sql_id **02bhunw0vgg2j** for the last 7 days.
 
-      You can see how the Average SQL Response time of the SQL has been increasing consistently for database **INVCP**. You can customize the bar chart display based on the following:
+      You can see how the Average SQL Response time of SQL has been increasing consistently for database **INVCP**. You can customize the bar chart display based on the following:
 
       * Avg. Active Sessions
       * Avg. Average Response Time
@@ -63,7 +63,7 @@ This lab assumes you have completed the following labs:
 
       ![Left Pane](./images/sql-warehouse22.png " ")
 
-8.  This page shows the SQL Details of our most degrading SQL **02bhunw0vgg2j** for database **INVCP**. You can review it's SQL Text and database location as well as its key performance metrics under: **Performance Statistics** and **Execution Plan Insights**.
+8.  This page shows the SQL Details of our most degrading SQL **02bhunw0vgg2j** for database **INVCP**. You can review its SQL Text and database location as well as its key performance metrics under: **Performance Statistics** and **Execution Plan Insights**.
 
       ![Left Pane](./images/sql-warehouse3.png " ")
 
@@ -71,20 +71,20 @@ This lab assumes you have completed the following labs:
 
       * The Average Response time in seconds.
       * The number of SQL Statements that were executed per hour.
-      * The variability value of the SQL Statement, which indicates the extent of variance in the SQL Statement's performance in the current time period.
-      * The inefficiency percentage which is based on the idle wait time of the SQL Statement.
+      * The variability value of the SQL Statement, which indicates the extent of variance in the SQL Statement's performance in the current period.
+      * The inefficiency percentage is based on the idle wait time of the SQL Statement.
       * The time range within which the maximum executions of the SQL Statement occurred.
 
       **Execution Plan Insights** provides:
 
       * Plans Used
-      * The best and worst performing plans
+      * The best and worst-performing plans
       * Plans with the most CPU and I/O usage
       * The most executed SQL Plan  
 
       In the **Metrics** section **Performance Trend** chart, we can see that the average Response of the SQL started to increase.
       
-      The **Activity** chart displays the session activity of the SQL Statement, for the current time. It also shows how the SQL Statement activity is categorized into different wait classes indicated by the color, as described in the legend on the chart.
+      The **Activity** chart displays the session activity of the SQL Statement, for the current time. It also shows how the SQL Statement activity is categorized into different wait classes indicated by the colour, as described in the legend on the chart.
 
 9.  Click on **Execution Plans** from the left pane.
 
@@ -98,7 +98,7 @@ This lab assumes you have completed the following labs:
 
       ![Left Pane](./images/sql-warehouse5.png " ")
 
-      You can see that the execution plan is different and much more expensive because Operations Cost of the SQL is now 329 million.
+      You can see that the execution plan is different and much more expensive because the Operations Cost of the SQL is now 329 million.
 
 11.  Click on **Comparison** from the left pane. This will show the comparison of performance trends of the two plans based on the **Average Response Time**.
 
