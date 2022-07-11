@@ -2,7 +2,7 @@
 
 ## About this Workshop
 
-In this workshop there are five lab exercises. They have been organized to help you become familiar with Operations Insights and use of this service's key capabilities. With the new demo mode for Operations Insights, you can experience the service's value with minimal effort.
+In this workshop, there are five lab exercises. They have been organized to help you become familiar with Operations Insights and the use of this service's key capabilities. With the new demo mode for Operations Insights, you can experience the service's value with minimal effort.
 
 Estimated Workshop Time: 1 hour
 
@@ -10,7 +10,7 @@ Estimated Workshop Time: 1 hour
 
 Oracle Cloud Infrastructure Operations Insights is an OCI native service that provides holistic insight into database and host resource utilization and capacity.  Operations Insights (OPSI) provides capacity planning, long-term SQL analysis, and historical performance reports for your Oracle databases. The service has a full offering of features to improve performance and reduce overhead for your resources. The ability to quickly and easily ingest valuable metric data allows administrators, engineers, and executives to make informed decisions on allocating resources to prevent major issues and reduce overhead for managing their infrastructure resources.
 
-Oracle Cloud Infrastructure (OCI) Operations Insights enables administrators to uncover performance issues, forecast consumption, and plan capacity using machine-learning based analytics on historical and SQL data. Organizations can use these capabilities to make data-driven decisions to optimize resource use, proactively avoid outages, and improve performance.
+Oracle Cloud Infrastructure (OCI) Operations Insights enables administrators to uncover performance issues, forecast consumption, and plan capacity using machine-learning-based analytics on historical and SQL data. Organizations can use these capabilities to make data-driven decisions to optimize resource use, proactively avoid outages, and improve performance.
 
 Operations Insights consists of the following integrated applications:
 
@@ -30,13 +30,13 @@ SQL Warehouse
 
 * Long-term SQL store for performance and trend analysis of Oracle Databases
 * Proactively identify and mitigate SQL issues
-* Find common patterns in SQL behavior across databases and applications
+* Find common patterns in SQL behaviour across databases and applications
 
 AWR Hub
 
 * Track and analyze SQL plan changes for workloads within a single database
 * Track and analyze SQL plan changes for workloads across multiple databases
-* Understand past and present workload (SQL) performance over a period of two years or above.
+* Understand past and present workload (SQL) performance over two years or above.
 * Build custom dashboards to plot SQL performance statistics, database waits, CPU usage history, connections established, etc.
 
 ### Objectives
