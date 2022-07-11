@@ -21,7 +21,7 @@ This lab assumes you have completed the following labs:
 
       ![Left Pane](./images/capacity-planning.png " ")
 
-2.  On the **Database Capacity Planning** page, you will obtain a fleet wide overview of your resource consumption and trends.  CPU insights, storage insights, and memory insights give a quick view into top resource consumers now and forecasts potential resource bottlenecks over the selected time period.
+2.  On the **Database Capacity Planning** page, you will obtain a fleet-wide overview of your resource consumption and trends.  CPU insights, storage insights, and memory insights give a quick view into top resource consumers now and forecast potential resource bottlenecks over the selected period.
 
       ![Left Pane](./images/database-capacity-planning.png " ")
 
@@ -29,8 +29,8 @@ This lab assumes you have completed the following labs:
 
     * View total allocation and utilization of CPU, Storage, Memory, and I/O resources for all (enabled) databases in the compartment
     * Identify top-5 databases of CPU, Storage, and Memory by absolute usage or utilization percentage
-    * Identify top-5 databases by CPU, Storage, and Memory growth over the time period
-    * See aggregated historical usage trends for CPU, Storage, and Memory over the time period
+    * Identify top-5 databases by CPU, Storage, and Memory growth over the period
+    * See aggregated historical usage trends for CPU, Storage, and Memory over the period
 
 3.  From **Time Range** on the left pane select **Last 90 days** and ensure that the **Compartment** is set to **OperationsInsights**.
 
@@ -40,15 +40,15 @@ This lab assumes you have completed the following labs:
 
       ![Left Pane](./images/inventory.png " ")
 
-5.  **CPU Insights** - Database utilization percentage for the 90th percentile value of the daily average CPU Usage over the selected time period. This sections show the number of databases running with low (0–25%) and high (75–100%) utilization of CPU.
+5.  **CPU Insights** - Database utilization percentage for the 90th percentile value of the daily average CPU Usage over the selected time period. These sections show the number of databases running with low (0–25%) and high (75–100%) utilization of CPU.
 
       ![Left Pane](./images/cpu-insights.png " ")
 
-6.  **Storage Insights** - Database utilization percentage for the 90th percentile value of the daily average Storage Usage over the selected time period.  This sections show the number of databases running with low (0–25%) and high (75–100%) utilization of storage.
+6.  **Storage Insights** - Database utilization percentage for the 90th percentile value of the daily average Storage Usage over the selected time period.  These sections show the number of databases running with low (0–25%) and high (75–100%) utilization of storage.
 
       ![Left Pane](./images/storage-insights.png " ")
 
-7.  **Memory Insights** - Database utilization percentage for the 90th percentile value of the daily average Memory Usage over the selected time period.  This sections show the number of databases running with low (0–25%) and high (75–100%) utilization of memory.
+7.  **Memory Insights** - Database utilization percentage for the 90th percentile value of the daily average Memory Usage over the selected time period.  These sections show the number of databases running with low (0–25%) and high (75–100%) utilization of memory.
 
       ![Left Pane](./images/memory-insights.png " ")
 
@@ -70,7 +70,7 @@ This lab assumes you have completed the following labs:
 
       ![Left Pane](./images/utilization-forecast.png " ")
 
-4.  Under **Database Display Name** column, select the row corresponding to **CRM-ST** database.
+4.  Under the **Database Display Name** column, select the row corresponding to the **CRM-ST** database.
 
       ![Left Pane](./images/crm-st-database.png " ")
 
@@ -89,30 +89,30 @@ This lab assumes you have completed the following labs:
 
 9.  The value **57.51** AVG ACTIVE CPU USAGE is forecasted for after 15 days for Avg usage of CPU.
 
-10.  Select **Max Usage** from legend on right side. The red line is **Max Usage** - maximum value of daily (hourly) CPU usage data for database **CRM-ST**.
+10.  Select **Max Usage** from the legend on the right side. The red line is **Max Usage** - maximum value of daily (hourly) CPU usage data for database **CRM-ST**.
 
       ![Left Pane](./images/max-usage-cpu.png " ")
 
-11.  Select **Max Usage Forecast** from legend on right side.
+11.  Select **Max Usage Forecast** from the legend on the right side.
 
       ![Left Pane](./images/max-usage-forecast.png " ")
 
 12.  The value **77.66** AVG ACTIVE CPU USAGE is forecasted for after 15 days for Max usage of CPU.
 
-    You can see the difference in average forecasted value v/s Max forecasted value. If the workload is critical and cannot tolerate any performance issues than database must be allocated the max forecasted value. If the workload is not so critical and can tolerate deviations in performance than it is ok to allocate CPU based on average forecasted value and save money.
+    You can see the difference in average forecasted value v/s Max forecasted value. If the workload is critical and cannot tolerate any performance issues then the database must be allocated the max forecasted value. If the workload is not so critical and can tolerate deviations in performance then it is ok to allocate CPU based on average forecasted value and save money.
 
 13.  The trending and forecast chart facilitates:
 
      * Forecast future maximum and average demand for CPU resources
      * Compare current usage to allocation to detect over-provisioning
      * Compare maximum to average usage and trends to assess demand volatility
-     * Forecast difference between maximum and average daily CPU usage to estimate potential savings from workload smoothing
+     * Forecast difference between the maximum and average daily CPU usage to estimate potential savings from workload smoothing
 
 14.  Click **Aggregate** on the top and from **Grouping** select **Database Type**.
 
       ![Left Pane](./images/aggregate-database.png " ")
 
-     The page displays a Tree map of all databases breaking it down by Database Type. This lets you compare how your different, individual databases are using their resources as well as between various database types.
+     The page displays a Treemap of all databases breaking it down by Database Type. This lets you compare how your different, individual databases are using their resources as well as between various database types.
 
 ## Task 3: Capacity Planning - Storage
 
@@ -120,21 +120,21 @@ This lab assumes you have completed the following labs:
 
       ![Left Pane](./images/storage-menu.png " ")
 
-2.  You get complete view of storage usage across all Operations Insights enabled databases
+2.  You get a complete view of storage usage across all Operations Insights enabled databases
 
       ![Left Pane](./images/database-storage.png " ")
 
     From here we can identify servers with underused or overused storage and also compare storage utilization between databases.
 
-3.  From the drop down on the top select **30 Days High Utilization Forecast**.
+3.  From the drop-down on the top select **30 Days High Utilization Forecast**.
 
       ![Left Pane](./images/storage-utilization-forecast.png " ")
 
-4.  In the **Trend & Forecast** chart View the storage trend and usage forecast for selected database.
+4.  In the **Trend & Forecast** chart View the storage trend and usage forecast for the selected database.
 
       ![Left Pane](./images/storage-trend-forecast.png " ")
 
-5.  In the **Trend & Forecast** chart View click on **Machine Learning** to project future resource consumption. Machine Learning is a more advanced model that takes seasonality into consideration.
+5.  In the **Trend & Forecast** chart View click on **Machine Learning** to project future resource consumption. Machine Learning is a more advanced model that considers seasonality.
 
       ![Left Pane](./images/storage-trend-forecast-ml.png " ")
 
