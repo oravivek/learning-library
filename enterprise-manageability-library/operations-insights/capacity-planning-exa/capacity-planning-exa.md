@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this lab, you will go through the steps to explore Capacity Planning of Oracle Exadata.
+In this lab, you will go through the steps to explore the Capacity Planning of Oracle Exadata.
 
 Estimated Time: 15 minutes
 
@@ -31,7 +31,7 @@ This lab assumes you have completed the following labs:
 
 ## Task 2: Exadata Fleet
 
-1.  On the **Operations Insights Overview** page, from the left pane select **Exadatas** compartment.
+1.  On the **Operations Insights Overview** page, from the left pane select the **Exadatas** compartment.
 
       ![Left Pane](./images/exadatas-comp.png " ")
 
@@ -39,7 +39,7 @@ This lab assumes you have completed the following labs:
 
       ![Left Pane](./images/exadata-fleet.png " ")
 
-3.  This will bring up **Exadata Fleet Administration** page, where all registered Exadata systems are displayed.
+3.  This will bring up the **Exadata Fleet Administration** page, where all registered Exadata systems are displayed.
 
       ![Left Pane](./images/exadata-fleet-admin.png " ")
 
@@ -73,7 +73,7 @@ This lab assumes you have completed the following labs:
 
       ![Left Pane](./images/aggregate-view.png " ")
 
-5.  Also, the current and forecast utilization of the Exadata system will be shown on the bottom section. Click on a Exadata system to evaluate more insights. Click on the Full Rack.
+5.  Also, the current and forecast utilization of the Exadata system will be shown in the bottom section. Click on an Exadata system to evaluate more insights. Click on the Full Rack.
 
       ![Left Pane](./images/current-forecast.png " ")
 
@@ -85,7 +85,7 @@ This lab assumes you have completed the following labs:
 
       ![Left Pane](./images/metrics-by-database.png " ")
 
-8.  Select **CPU** tab and choose the **Host** under Grouping.
+8.  Select the **CPU** tab and choose the **Host** under Grouping.
 
       ![Left Pane](./images/metrics-by-database-host.png " ")
 
@@ -97,7 +97,7 @@ This lab assumes you have completed the following labs:
 
       ![Left Pane](./images/max-cpu-max-database.png " ")
 
-11.  To show the trend & forecast of CPU for Host and Database, click on the host name and highlight the trend graph.
+11.  To show the trend & forecast of CPU for Host and Database, click on the hostname and highlight the trend graph.
 
       ![Left Pane](./images/trend-host-cpu.png " ")
 
@@ -113,7 +113,7 @@ This lab assumes you have completed the following labs:
 
       ![Left Pane](./images/cpu-all-hosts.png " ")
 
-15.  Click **Exadata Storage Server** option on the left pane.
+15.  Click the **Exadata Storage Server** option on the left pane.
 
       ![Left Pane](./images/exadata-storage-server.png " ")
 
